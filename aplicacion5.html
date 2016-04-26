@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>nombre de la persona</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+ <script>
+      function validar()
+        {
+          var valor = document.getElementById("caja").value //Encuentra el 'value' de 'caja'
+          if(valor=="" )  // si es un 'no numero'
+            {
+              alert ("Ingresa letras");
+            }
+          else
+            {
+              alert ("¡Hola ! " + valor);
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header">
+    <h1>Nombre y mensaje</h1>
+    </div>
+    <label form="name">Nombre</label>
+    <input type="text" name="name" id="caja">
+     <button type"button" onClick="validar()"> Enviar </button>
+  
+   
+ <div data-role="footer" data-position="fixed" align="center" data-theme="a">
+ <img src="res/android/mdpi.png" width="46" height="46">
+      <h4>Erika Giles Rosas</h4>
+   </div>
+   </div>
+   
+
+</body>
+</html>
